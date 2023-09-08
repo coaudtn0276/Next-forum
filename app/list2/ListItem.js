@@ -21,13 +21,10 @@ export default function ListItem({ result }) {
                     return r.json();
                   })
                   .then((r) => {
-                    console.log(r);
-                    if (r === "삭제완료") {
-                      e.target.parentElement.style.opacity = 0;
-                      setTimeout(() => {
-                        e.target.parentElement.style.display = "none";
-                      }, 1000);
-                    }
+                    e.target.parentElement.style.opacity = 0;
+                    setTimeout(() => {
+                      e.target.parentElement.style.display = "none";
+                    }, 1000);
                   });
 
                 // URL parameter 이용

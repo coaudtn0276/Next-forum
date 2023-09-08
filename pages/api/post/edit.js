@@ -2,7 +2,7 @@ import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
 
 export default async function handler(req, res) {
-  console.log(req.body);
+  // console.log(req.body);
   const filter = { title: req.body.title, content: req.body.content };
 
   if (req.method === "POST") {
