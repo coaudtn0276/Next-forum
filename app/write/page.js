@@ -7,14 +7,6 @@ export default function Write() {
         <input type="text" name="content" placeholder="글내용" />
         <button type="submit">버튼</button>
       </form>
-      {/* <form action="/api/list" method="POST">
-        <button type="submit">날짜 데이터 버튼</button>
-      </form>
-      <form action="/api/list" method="POST">
-        <input placeholder="제목" name="title" />
-        <input placeholder="내용" name="content" />
-        <button type="submit">내용 전달</button>
-      </form> */}
     </div>
   );
 }
