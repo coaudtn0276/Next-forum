@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       .find({ parent: new ObjectId(req.query._id) })
       .toArray();
 
-    console.log(find);
+    // console.log(find);
 
     return res.status(200).json(find);
   }
